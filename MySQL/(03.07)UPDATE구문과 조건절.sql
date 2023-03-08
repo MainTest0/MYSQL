@@ -131,6 +131,14 @@ VALUES
 
 SELECT * FROM movie; 
 
+UPDATE movie
+SET title = '아바타2',
+	director = '봉준호',
+    release_date = 20230308,
+    genre = '판타지',
+    rating = 9.38
+WHERE id = 1;
+
 
 
 

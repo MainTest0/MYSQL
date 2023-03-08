@@ -1,3 +1,10 @@
+
+-- member 테이블에서 id가 3인 행 삭제
+DELETE FROM member WHERE id = 3;
+
+-- member 테이블에서 gender가 'F'이고 age가 20보다 큰 행 삭제
+DELETE FROM member WHERE gender = 'F' AND age > 20;
+
 CREATE TABLE product (
   id INT PRIMARY KEY,
   name VARCHAR(50) NOT NULL,
