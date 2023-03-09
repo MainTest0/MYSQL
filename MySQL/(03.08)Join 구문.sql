@@ -89,14 +89,14 @@ LEFT JOIN userTBL AS u
 ON b.userName = u.userName;
 
 -- right join
--- 보고싶은 것만 보기
 SELECT u.userName, b.prodName, b.price, b.amount
 FROM userTBL AS u
 RIGHT JOIN buyTBL AS b
 ON u.userName = b.userName;
 
 -- 테이블이 없어도 동작한다.
-SELECT u.userName, b.prodName, b.price, b.amount
+SELECT u.userName, b.prodName, b.price, b.amount,
+	(b.price * b.amount) AS 'SUM'
 FROM userTBL AS u
 RIGHT JOIN buyTBL AS b
 ON u.userName = b.userName;

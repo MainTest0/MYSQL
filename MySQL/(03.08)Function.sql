@@ -1,7 +1,8 @@
+-- 현재 날짜,시간 출력
 SELECT now();
-
+-- 현재 날짜만 출력
 SELECT CURDATE();
-
+-- 현재 시간만 출력
 SELECT CURTIME();
 
 -- String Function
@@ -61,20 +62,31 @@ SELECT round(123.56, 1);
 -- 내림
 SELECT floor(25.75);
 
+-- buyTBL 테이블에서 price 데이터 중 가장 작은 값 출력
 SELECT min(price)
 from buytbl;
-
-SELECT prodName, min(price)
-from buytbl;
-
+-- butTBL 테이블에서 price 데이터 중 가장 큰 값 출력
 SELECT prodName, max(price)
 from buyTBL;
 
-
-
-
+-- error 확인
+-- 앞에 ONLY_FULL_GROUP_BY 있으면 삭제
 select @@global.sql_mode;
 select @@session.sql_mode;
+
+SELECT ASCII('가'), ASCII('강');
+
+SELECT CHAR(97);
+
+
+
+
+
+
+
+
+
+
 
 
 

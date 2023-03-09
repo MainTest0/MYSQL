@@ -113,7 +113,7 @@ CREATE TABLE movie(
     genre VARCHAR(30) NOT NULL,
     rating DECIMAL(3, 2)
 );
-DROP TABLE movie;
+
 DESC movie;
 
 INSERT INTO movie(title, director, release_date, genre,rating)
