@@ -97,6 +97,3 @@ SELECT CHAR(97);
 
 
 
-
-
-
